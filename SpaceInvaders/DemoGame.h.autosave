@@ -1,0 +1,23 @@
+#ifndef DEMOGAME_H
+#define DEMOGAME_H
+#include <GameBuilder.h>
+
+
+namespace si {
+
+    //Extends from the Builder named GameBuilder
+    //This is the concrete builder
+    class DemoGame : public GameBuilder
+    {
+        public:
+            DemoGame();
+            virtual ~DemoGame();
+
+            virtual void BuildShip(int x, int y, int size);
+            virtual void BuildBullet(int x, int y);
+
+    };
+}
+
+
+#endif // DEMOGAME_H

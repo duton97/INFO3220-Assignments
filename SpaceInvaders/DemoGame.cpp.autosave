@@ -1,0 +1,22 @@
+#include "DemoGame.h"
+
+namespace si {
+    DemoGame::DemoGame()
+    {
+
+    }
+
+    DemoGame::BuildShip(int x, int y, int size)
+    {
+        if (size == 1) {
+            Ship ship = new TinyShip(x, y, size);
+            
+        }
+    }
+
+    DemoGame::BuildBullet(int x, int y)
+    {
+
+    }
+
+}
